@@ -123,7 +123,7 @@ async def handle_link(message: types.Message):
         logging.info(f"Успешно отправлено видео пользователю {message.from_user.id}")
 
     except Exception as e:
-        logging.error(f"Ошибка скачивания для {message.from_user.id}: {e	bit}")
+        logging.error(f"Ошибка скачивания для {message.from_user.id}: {e}")
         await message.answer("Не удалось скачать видео 😔 Проверь ссылку или попробуй другую.")
 
 async def download_video(url: str):
@@ -149,3 +149,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
