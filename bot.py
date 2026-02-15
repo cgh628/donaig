@@ -18,7 +18,7 @@ CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME", "@flawlessvideohub")
 CHANNEL_ID = int(os.getenv("CHANNEL_ID", "-1001234567890"))
 
 # ОБЯЗАТЕЛЬНО ЗАМЕНИ НА СВОЙ РЕАЛЬНЫЙ ДОМЕН RENDER!
-WEBHOOK_URL = "https://donaig-3.onrender.com"  # ←←← ИЗМЕНИ ЭТО!!!
+WEBHOOK_URL = "https://donaig-4.onrender.com"  # ←←← ИЗМЕНИ ЭТО!!!
 WEBHOOK_PATH = "/webhook"
 
 os.makedirs("downloads", exist_ok=True)
@@ -171,4 +171,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
